@@ -1,0 +1,14 @@
+module demoduplicate {
+    exports com.example.accessingdatajpa;
+    opens com.example.accessingdatajpa;
+
+    requires org.slf4j;
+    requires spring.boot;
+    requires spring.boot.autoconfigure;
+    requires spring.context;
+    requires spring.data.commons;
+    requires java.persistence;
+
+    // Found from https://vladcd.wordpress.com/2020/05/20/spring-boot-project-using-java-9-modules-part-1/
+    requires java.sql;
+}
